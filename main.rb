@@ -22,7 +22,7 @@ class PaymentService
     end
 
     def disburse_platform_funds(ach_number, country)
-        @platform_wrapper.disburse_funds(2099848938844, "US")
+        @platform_wrapper.disburse_funds(ach_number, country)
     end
     
 end
